@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ethern Myth" />
+        <title>U-Shortener</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container mx-auto py-12">
+            <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="px-4 py-4">
+                    <h2 class="text-center text-2xl font-semibold text-gray-800 uppercase mb-2">URL Shortener</h2>
+                    <div class="mt-4">
+                        <input type="text" id="original-url"
+                            class="w-full p-2 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            placeholder="Enter URL to shorten">
+                    </div>
+                    <div class="mt-4">
+                        <button class="w-full bg-indigo-600 text-white font-bold py-2 px-4 rounded hover:bg-indigo-500"
+                            id="shorten-btn">Shorten</button>
+                    </div>
+                    <div class="mt-4" id="shortened-url"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
